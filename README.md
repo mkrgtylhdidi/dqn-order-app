@@ -17,19 +17,19 @@ The model is designed to optimise delivery decisions under uncertainty (e.g. dem
 ## 🧠 Model Overview
 
 The DQN model was trained using a custom Gym environment that simulates:
-- Variable demand based on planned activities and stochastic disruptions (weather, crane, labour)
+- Variable demand based on planned activities and stochastic disruptions (weather, crane, labour, deliver punctuality)
 - Lead time variability (1–2 days)
 - Limited site storage (max 60 tons)
 - Discrete truck-based ordering (10-ton increments)
 
 **State features (8 total):**
 - Current inventory level
-- Current day of the episode
+- Current day of the project
 - Backlog (unfulfilled demand)
 - Expected demand today
-- Lead time
+- Lead time experienced for latest delivery
 - Expected demand tomorrow
-- Trucks used on previous 2 days
+- Number of Trucks used on previous 2 days
 
 **Action space:**  
 Discrete order quantities: `[0, 10, 20, 30, 40]` tons
