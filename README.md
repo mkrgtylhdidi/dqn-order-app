@@ -2,7 +2,7 @@
 
 This Streamlit web app provides **daily order quantity recommendations** for steel reinforcement deliveries on construction sites using a trained **Deep Q-Network (DQN)** model.
 
-The model is designed to optimize delivery decisions under uncertainty (e.g. demand variability, lead time, and on-site constraints), aiming to minimise:
+The model is designed to optimise delivery decisions under uncertainty (e.g. demand variability, lead time, and on-site constraints), aiming to minimise:
 - Total cost (holding, transport, shortage)
 - Overstocking near project end
 - Delivery inefficiencies
